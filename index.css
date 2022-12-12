@@ -1,0 +1,62 @@
+.topper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 30px;
+    text-align: center;
+}
+#input-field{
+    background-color: aliceblue;
+    border-radius: 20px;
+    height: 50px;
+    width: 70%  ;
+    font-size: 20px;
+}
+button{
+    border-radius: 10px;
+    width: 60px;
+    height: 50px;
+
+}
+button:hover{
+    background-color: orange;
+    border-color: white;
+}
+body{
+    background-color: indianred;
+    padding: 0px;
+}
+i:hover{
+color: orange;
+border-color: white;
+
+}
+i{
+    font-size: 30px;
+}
+span{
+    color: palevioletred;
+}
+.topper{
+    background-color: black;
+    color: white;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    
+}
+main{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+    
+}
+section i:hover{
+color: black;
+}
+.tasks{
+    margin-top: 25px;
+}
+
+

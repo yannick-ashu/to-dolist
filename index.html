@@ -6,29 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
+    <div class="topper">
+        <h1>To-do <span>List</span> </h1>
+       <button id="refreshButton" onclick="window.location.reload()">New List</button>
+    </div>
+
     <main>
-        <div class="topper">
-            <h1>To-do <span>List</span> </h1>
-            <i class='bx bx-menu'></i>
-        </div>
         <section>
 
-            <form action="">
-                <input type="text" placeholder="What will you do today" id="input-field"><button id="btn"><i
-                        class='bx bxs-add-to-queue'></i></button>
+            <form>
+                <input type="text" placeholder="What will you do today" id="input-field" required>
+                <button id="btn"><i class='bx bxs-add-to-queue'></i></button>
                 </div>
             </form>
-
-        </section>
-        <div id="to-doContainer">
-        </div>
     </main>
+    </section>
+
+    <h1>Tasks</h1>
+
+    <div id="new-task">
+        <div>
+
+
+        </div>
+
+
+        <!-- <input type="text" placeholder="this is a read only">
+ <button id="edit">Edit</button> 
+<button class="delete">Delete</button>
+</div>
+<div>
+<input type="text" readonly placeholder="this is a read only">
+<button id="edit">Edit</button> 
+<button class="delete">Delete</button>
+</div> -->
+    </div>
+<div class="paragraphs">
+    <div id="disp" class="dispp"></div>
+
+</div>
+    <script src="script.js"></script>
 </body>
 
 </html>

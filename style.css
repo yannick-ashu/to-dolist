@@ -9,7 +9,7 @@
 }
 #input-field{
     background-color: aliceblue;
-    border-radius: 20px;
+    border-radius: 10px;
     height: 50px;
     width: 70%  ;
     font-size: 20px;
@@ -81,20 +81,28 @@ color: black;
     justify-content: space-between;
  }
 .dispp {
-    display: inline-block;
+    display: flex;
     flex-direction: column;
     border-width: 5rem;
     border-radius: 1rem;
+    border-radius: 30px;
+    padding:20px;
+    gap: 30px;
+    background-size: 100%;
 
     }
 .paragraphs button{
 height: 25px;
 border-radius: 9px;
 font-family: serif;
+float: right;
+gap: 40px;
 }
 .paragraphs{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
+    border: 30px;
+    margin: 10px
 }
 #refreshButton{
     border-right-style: none;

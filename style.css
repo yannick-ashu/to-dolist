@@ -1,116 +1,203 @@
+ body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(15, 115, 149), rgb(94, 237, 94));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+} 
 .topper{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    font-size: 25px;
-    text-align: center;
-    padding: 0.5rem;
-    align-items: center;
+    text-shadow: 30px;
+    color: white;
+
+}
+.topper h1 span{
+    color: white
+}
+.topper  h1{
+    font-size:100px;
+background: linear-gradient(to right, rgb(59, 106, 200), rgb(164, 164, 213));
+border-radius: 2rem;
+}
+#refreshButton{
+    font-size: 15px;
+    min-height: 40px;
+    max-height: 100px;
+    min-width: 5rem;
+    float: right;
+    font-family: Gotham , monospace, sans-serif;
+    border-radius: 1rem;
+    margin-top: 90px;
+    margin-right: 20px;
+    cursor:pointer;
 }
 #input-field{
-    background-color: aliceblue;
-    border-radius: 10px;
-    height: 50px;
-    width: 70%  ;
-    font-size: 20px;
-    
-}
-section{
-    padding: 30px;
-}
-main button{
-    border-radius: 10px;
-    width: 60px;
-    height: 50px;
+    min-width: 300px;
+    min-height: 50px;
+    max-width: 500vh;
 
 }
-button:hover{
-    background-color: orange;
-    border-color: white;
-}
-body{
-    background-color: lightblue;
-    padding: 0px;
-}
-@media all and ( max-width: 400px) {
-    .topper{
-        font-size: 20px;
-    }
-}
-i:hover{
-color: orange;
-border-color: white;
+#btn {
+    min-width: 20px;
+    min-height: 55px;
 
 }
-i{
-    font-size: 30px;
+.superior-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-span{
-    color: palevioletred;
+.inputs{
+    height: 30px;
+    margin-bottom: 30px;
+   width: 80%;
 }
-.topper{
+.btns{
+    height: 30px;
+    float:right;
+    cursor: pointer;
+}
+#theme{
+  margin-left: 350px;
+ 
+}
+/* .superior-div{
+    background-color: rgb(19, 19, 19);
+    border-radius: 1rem;
+    color: white;
+} */
+#theme:hover{
     background-color: black;
     color: white;
 }
-section{
+/* .paragraphs{
     display: flex;
-    flex-direction: column;
-    
-}
-main{
-   display: flex;
-   flex-direction: column;
-   gap: 30px;
-    
-}
-section i:hover{
-color: black;
-}
-.tasks{
-    margin-top: 25px;
-}
-#new-task{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    flex-flow: column;
+} */
 
-}
- main{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
- }
-.dispp {
-    display: flex;
-    flex-direction: column;
-    border-width: 5rem;
-    border-radius: 1rem;
-    border-radius: 30px;
-    padding:20px;
-    gap: 30px;
-    background-size: 100%;
 
-    }
-.paragraphs button{
-height: 25px;
-border-radius: 9px;
-font-family: serif;
-float: right;
-gap: 40px;
-}
-.paragraphs{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
-    border: 30px;
-    margin: 10px
-}
-#refreshButton{
-    border-right-style: none;
-    border-width: 3px;
-    background-size: 20px;
-    border-color: indianred;
-    border-radius: 5px;
-    height: 60px;
-    font-family: serif;
-}
+/* 
+        * .topper{
+                display: flex;
+            
+                justify-content: space-between;
+                font-size: 25px;
+                text-align: center;
+                padding: 0.5rem;
+                align-items: center; 
+            } 
+            #input-field{
+                background-color: aliceblue;
+                border-radius: 10px;
+                height: 50px;
+                width: 70%  ;
+                font-size: 20px;
+                
+            }
+            section{
+                padding: 30px;
+            }
+        main button{
+                border-radius: 10px;
+                width: 60px; 
+                height: 50px;
 
+            }
+            button:hover{
+                background-color: orange;
+                border-color: white; */
+            /* }
+            body{
+                padding: 0px;
+            }
+            @media all and ( max-width: 400px) {
+                .topper{
+                    font-size: 20px;
+                }
+            }
+            i:hover{
+            color: orange;
+            border-color: white;
+
+            }
+            i{ 
+                font-size: 30px;
+            }
+            span{
+                color: palevioletred;
+            }
+            .topper{
+                background-color: black;
+                color: white;
+            }
+            section{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            main{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+                
+            }
+            section i:hover{
+            color: black;
+            }
+            .tasks{
+                margin-top: 25px;
+            }
+            #new-task{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+            }
+            main{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .dispp {
+                display: flex;
+                flex-direction: column;
+                border-width: 5rem;
+                border-radius: 1rem;
+                border-radius: 30px;
+                padding:20px;
+                gap: 30px;
+                background-size: 100%;
+
+                }
+            .paragraphs button{
+            height: 25px;
+            border-radius: 9px;
+            font-family: serif;
+            float: right;
+            gap: 40px;
+            }
+            .paragraphs{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 25px;
+                border: 30px;
+                margin: 10px
+            }
+            #refreshButton{
+                border-right-style: none;
+                border-width: 3px;
+                background-size: 20px;
+                border-color: indianred;
+                border-radius: 5px;
+                height: 60px; 
+                font-family: serif;
+            }
+        
+        .superior-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        } */ */

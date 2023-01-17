@@ -5,53 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-dolist</title>
+     <!-- <link rel="stylesheet" href="style.css">  -->
     <link rel="stylesheet" href="style.css">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
-<body>
-    <div class="topper">
-        <h1>To-do <span>List</span> </h1>
-       <button id="refreshButton" onclick="window.location.reload()">New List</button>
-    </div>
+<body id="this-is-my-body">
+    <button id="theme">Darkmoode</button>
+    <div class="superior-div">
+        <div class="topper">
+            <h1>To-do <span>List</span> </h1>
+        </div>
 
-    <main>
         <section>
 
             <form>
-                <input type="text" placeholder="What will you do today" id="input-field" minlength="5">
+                <input type="text" placeholder="What will you do today" id="input-field" required>
                 <button id="btn"><i class='bx bxs-add-to-queue'></i></button>
-                </div>
+
             </form>
-    </main>
-    </section>
+            </main>
+        </section>
 
-    <h1>Tasks</h1>
+        <h1 class="tasks">Tasks</h1>
 
-    <div id="new-task">
-        <div>
+        <div id="new-task">
+            <div>
+
+
+            </div>
 
 
         </div>
+        <div class="paragraphs">
+            <div id="disp" class="dispp"></div>
 
-
-        <!-- <input type="text" placeholder="this is a read only">
- <button id="edit">Edit</button> 
-<button class="delete">Delete</button>
-</div>
-<div>
-<input type="text" readonly placeholder="this is a read only">
-<button id="edit">Edit</button> 
-<button class="delete">Delete</button>
-</div> -->
+        </div>
+        <footer>
+            <button id="refreshButton" onclick="window.location.reload()">Clear all</button>
+            <main>
+          
+        </footer>
+        <script src="script.js"></script>
     </div>
-<div class="paragraphs">
-    <div id="disp" class="dispp"></div>
 
-</div>
-    <script src="script.js"></script>
 </body>
-
 </html>
